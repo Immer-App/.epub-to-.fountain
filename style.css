@@ -1,0 +1,221 @@
+.orig *{
+    padding:4px;
+    font-family: monospace;
+    font-size:10px;
+    margin:4px;
+    border:1px solid #999;
+    position:relative;
+    }
+  .orig>*{
+    margin-bottom:20px;
+    box-shadow: 0px 3px 10px #000000aa;
+    background-color:#fff;
+  }
+  .orig span{
+    border:0px !important;
+    padding:0px !important;
+  }
+  .orig img{
+    padding:20px;
+    background:#ccc;
+  }
+  .container{
+    display:flex;
+    margin-top:40px;
+  }
+  .orig{
+    background:#eee;
+  }
+  .container>div{
+    padding:20px;
+    margin:5px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+  .overlay{
+    position:absolute;
+    background:#fff;
+    box-shadow: 0px 3px 10px #000000aa;
+    font-family: sans-serif;
+      }
+  .overlay *{
+    font-family: sans-serif;
+    }
+  .overlay.paginaverwijderen{
+    right:-10px;
+    top:-10px;
+    cursor:pointer;
+          }
+  .overlay.allesverwijderen{
+    right:100px;
+    top:-10px;
+    cursor:pointer;
+          }
+  .overlay.allesverwijderen:hover{
+    background:#00b786;
+    color:#fff;
+  }
+  .overlay.paginaverwijderen:hover{
+    background:#f00;
+    color:#fff;
+  }
+  .overlay.classnaam{
+    right: -100px;
+    top: -5px;
+    cursor: pointer;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #ff003b88;
+    color:#fff;
+    border-radius:5px;
+      border:0px;
+      z-index:1;
+  }
+  .keuzemenu,.identificerenmenu {
+        position: absolute;
+    right: -280px;
+    background: #3da9a9;
+    z-index: 1;
+    box-shadow: 0px 3px 10px #000000aa;
+    border: 2px solid #fff;
+    top: 8px;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    width: 280px;
+
+  }
+  .keuzemenu>*{
+	  border:0px;
+  }
+  .keuzeknop{
+    background:#fff;
+    color:#000;
+    cursor: pointer;
+    border:0px;
+    border-radius:5px;
+    text-transform: capitalize;
+    }
+  .keuzeknop:hover{
+    background:#ccc;
+  }
+  .voorzien{
+    background-color:rgba(0, 186, 189, 0.54) !important;
+  }
+  .nav{
+   display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #ddd;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    box-shadow: 0px 0px 20px #000000aa;
+  }
+  .nav *{
+    font-family: sans-serif;
+  }
+  .nav .naarrood{
+    background:#fff;
+    color:#000;
+    cursor: pointer;
+    border:0px;
+    border-radius:5px;
+    text-transform: capitalize;
+    padding:10px;
+  }
+  .nav .naarrood:hover{
+    background:#ccc;
+  }
+  .stats{padding:10px;}
+  .verwijderd{
+    opacity:0.2;
+  }
+  .apartekeuze{
+    background-color:#ffffffaa;
+  }
+  .fount{
+	  padding-left:100px !important;
+	  padding-right:60px !important;
+	  padding-top:50px !important;
+	  background-color:#aedcf0;
+  }
+  .fount *{
+	  font-size:10px;
+	  font-family: monospace;
+	  color:#000;
+	  text-decoration: none;
+	  font-weight: normal;
+  }
+  .fount .verwijderd{
+	  display:none !important;
+  }
+  a.download,a.nieuw {
+    float: right;
+    display: block;
+    background: #23d26b;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+  }
+  a.nieuw{
+	  float:left;
+	  left:10px;
+	  right:auto;
+  }
+  .tags,.sectie{
+      pointer-events:none;
+}
+  .tags:before,.sectie:before {
+	      pointer-events:auto;
+
+    background-color: #ff00318c;
+    content: 'X';
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -16px;
+    top: 0px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* border: 2px solid #fff; */
+    cursor: pointer;
+}
+.orig .tags{
+	background:#e9fffd;
+}
+.orig .sectie{
+	background:#fce8ff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+form *{
+	font-family: sans-serif;
+	margin:10px;
+}
+
+/*
+.fount .sectie {
+    display: inline;
+    clear: none;
+    float: left;
+}
+*/
